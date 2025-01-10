@@ -19,6 +19,8 @@ devtools::install_github("mvilardell2/useFunctions")
 
 - enhancedvolcanoplot
 
+- pheatmap
+
 ### Example
 
 ``` r
