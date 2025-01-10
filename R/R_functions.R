@@ -6,6 +6,9 @@
 
 #' Volcano Plot with EnhancedVolcano
 #'
+#' This function creates an enhanced volcano plot for visualizing
+#' differential expression results, such as log-fold changes and p-values.
+#'
 #' @param top.table Results from the DE analysis (logFC,P.value,), with genes in rownames.
 #' @param filename Filename to save the plot (Default volcano_plot.png).
 #' @param save Whether to save the plot or not (Default TRUE).
@@ -15,6 +18,13 @@
 #' @import EnhancedVolcano
 #' @import ggplot2
 #' @export
+#'
+#'
+#' @examples
+#' # Example data
+#' data(top.table)
+#' enhancedvolcanoplot(top.table, title = "Example Volcano Plot")
+#'
 
 
 enhancedvolcanoplot <- function(top.table, filename = 'volcano_plot.png', save = TRUE,

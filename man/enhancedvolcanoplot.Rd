@@ -24,5 +24,12 @@ enhancedvolcanoplot(
 \item{top_genes}{Vector containing names of genes to highlight in the plot.}
 }
 \description{
-Volcano Plot with EnhancedVolcano
+This function creates an enhanced volcano plot for visualizing
+differential expression results, such as log-fold changes and p-values.
+}
+\examples{
+# Example data
+data(top.table)
+enhancedvolcanoplot(top.table, title = "Example Volcano Plot")
+
 }
