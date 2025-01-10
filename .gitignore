@@ -1,1 +1,6 @@
 .Rproj.user
+.Rprofile
+.Rhistory
+.Rbuildignore
+renv/
+renv.lock
