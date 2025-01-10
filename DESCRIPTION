@@ -12,7 +12,8 @@ Roxygen: list(markdown = TRUE)
 RoxygenNote: 7.3.2
 Imports:
     ggplot2,
-    EnhancedVolcano
+    EnhancedVolcano,
+    pheatmap
 Depends: 
     R (>= 2.10)
 LazyData: true
