@@ -1,12 +1,14 @@
 
 #' Heatmap with Pheatmap
 #'
+#'
 #' @param data Data frame with normalized values and genes in rownames
 #' @param filename Name of the file to save the plot
 #' @param save Whether to save the plot or not (Default TRUE).
 #' @param scale Scale data (Default rows).
 #' @param cluster_cols Default True
 #' @param cluster_rows Default True
+#' @param fontsize Size of the text
 #' @param show_rownames Default False
 #' @param show_colnames Default True
 #' @param title Title of the plot.
@@ -17,9 +19,14 @@
 #' @import ggplot2
 #'
 #' @export
+#'
+#' @examples
+#' data(data_heatmap)
+#' data(pD_annotation)
+#' create_heatmap(data_heatmap,top=10,save = FALSE,annotation = pD_annotation,show_rownames = TRUE)
 
 
-pheatmap <- function(data, filename = "heatmap_plot.png", save = TRUE, scale = "row", fontsize = 7, cluster_rows = TRUE,
+create_heatmap <- function(data, filename = "heatmap_plot.png", save = TRUE, scale = "row", fontsize = 7, cluster_rows = TRUE,
                      cluster_cols = TRUE, show_rownames = FALSE, show_colnames = TRUE,
                      annotation = NULL, title = "Heatmap",top = NULL) {
 
@@ -52,4 +59,4 @@ pheatmap <- function(data, filename = "heatmap_plot.png", save = TRUE, scale = "
 }
 
 
-#create_heatmap(results_normalization,top=100,save = F,annotation = pD_annotation,show_rownames = T)
+

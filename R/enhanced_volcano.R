@@ -23,7 +23,7 @@
 #' @examples
 #' # Example data
 #' data(top.table)
-#' enhancedvolcanoplot(top.table, title = "Example Volcano Plot")
+#' enhancedvolcanoplot(top.table, title = "Example Volcano Plot",save = FALSE)
 #'
 
 
@@ -50,9 +50,6 @@ enhancedvolcanoplot <- function(top.table, filename = 'volcano_plot.png', save =
   return(volcano_plot)
 }
 
-
-# Example:
-# enhancedvolcanoplot(top.table,title='AITL')
 
 
 
